@@ -1,0 +1,16 @@
+
+{                                                                   
+            "name": "be.elab.realityhackerlikeEditor",          
+    "references": ["be.elab.realityhackerlike"
+],                                                              
+    "optionalUnityReferences": [],                                  
+    "includePlatforms": [                                           
+        "Editor"                                                    
+    ],                                                              
+    "excludePlatforms": [],                                         
+    "allowUnsafeCode": false,                                       
+    "overrideReferences": false,                                    
+    "precompiledReferences": [],                                    
+    "autoReferenced": true,                                         
+    "defineConstraints": []                                         
+}                                                                   

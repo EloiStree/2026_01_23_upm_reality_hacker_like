@@ -1,0 +1,29 @@
+
+{                                                                                
+  "name": "be.elab.realityhackerlike",                              
+  "displayName": "Reality Hacker Like",                        
+  "version": "0.0.1",                         
+  "unity": "2018.1",                             
+  "unityRelease": "",                             
+  "description": "Tribute to reality hacker app on Android to show case Shader and Texture management with compute Shader and others.",                         
+  "keywords": ["Script","Tool"],                       
+  "dependencies":{},     
+  "relatedPackages":{},     
+  "samples": [
+    {
+      "displayName": "Demo Scene",
+      "description": "Demo on how to use the package",
+      "path": "Scene/Demo"
+    }
+  ] ,     
+  "author" : {
+"name":"",
+"mail":"",
+"url":""},     
+  "repository":{
+"type":"Git",
+"url":"https://github.com/EloiStree/2026_01_23_upm_reality_hacker_like.git",
+"footprint":"",
+"revision":""},     
+  "category": "Script"                   
+} 
