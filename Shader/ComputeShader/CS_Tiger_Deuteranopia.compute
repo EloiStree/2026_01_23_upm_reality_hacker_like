@@ -1,0 +1,47 @@
+#pragma kernel CSMain
+
+Texture2D<float4> m_source;
+RWTexture2D<float4> m_result;
+
+int m_width;
+int m_height;
+
+float3 RGBtoLMS(float3 c)
+{
+    return mul(float3x3(
+        17.8824, 43.5161, 4.11935,
+        3.45565, 27.1554, 3.86714,
+        0.0299566, 0.184309, 1.46709
+    ), c);
+}
+
+float3 LMStoRGB(float3 c)
+{
+    return mul(float3x3(
+         0.0809444479, -0.130504409, 0.116721066,
+        -0.0102485335, 0.0540193266, -0.113614708,
+        -0.0003652969, -0.0041216147, 0.693511405
+    ), c);
+}
+
+// Deuteranopia cone-confusion
+float3 ApplyDeuteranopia(float3 lms)
+{
+    lms.y = (lms.x * 0.494207) + (lms.z * 1.24827);
+    return lms;
+}
+
+[numthreads(8, 8, 1)]
+void CSMain(uint3 id : SV_DispatchThreadID)
+{
+    if (id.x >= m_width || id.y >= m_height)
+        return;
+
+    float4 col = m_source.Load(int3(id.xy, 0));
+
+    float3 lms = RGBtoLMS(col.rgb);
+    lms = ApplyDeuteranopia(lms);
+    float3 rgb = LMStoRGB(lms);
+
+    m_result[id.xy] = float4(saturate(rgb), col.a);
+}
