@@ -282,14 +282,14 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410087039}
   m_Enabled: 1
-  serializedVersion: 13
+  serializedVersion: 11
   m_Type: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
-  m_CookieSize2D: {x: 10, y: 10}
+  m_CookieSize: 10
   m_Shadows:
     m_Type: 2
     m_Resolution: -1
@@ -334,7 +334,7 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
-  m_ShapeRadius: 0
+  m_ShadowRadius: 0
   m_ShadowAngle: 0
   m_LightUnit: 1
   m_LuxAtDistance: 1
@@ -383,11 +383,6 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
---- !u!4 &632458161 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5504564094996815714, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-  m_PrefabInstance: {fileID: 519944847500204780}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,306 +464,6 @@ Transform:
   - {fileID: 2097072104}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1148811990
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1148811991}
-  m_Layer: 0
-  m_Name: Inverse Horizontal
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1148811991
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1148811990}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 632458161}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1154000418
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1154000419}
-  - component: {fileID: 1154000420}
-  m_Layer: 0
-  m_Name: Fetch Cross Border Color
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1154000419
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1154000418}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1755168714}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1154000420
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1154000418}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e80b6148ea352742952691bbeb8a011, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: be.elab.texturetoolbox::TextureMono_FetchCrossBorderColorPoints
-  m_widthOfTexture: 0
-  m_heightOfTexture: 0
-  m_expectedLenght: 0
-  m_nativeArrayLenght: 0
-  m_centerColor:
-    serializedVersion: 2
-    rgba: 0
-  m_topLeftColor:
-    serializedVersion: 2
-    rgba: 0
-  m_topRightColor:
-    serializedVersion: 2
-    rgba: 0
-  m_bottomLeftColor:
-    serializedVersion: 2
-    rgba: 0
-  m_bottomRightColor:
-    serializedVersion: 2
-    rgba: 0
-  m_topColor:
-    serializedVersion: 2
-    rgba: 0
-  m_rightColor:
-    serializedVersion: 2
-    rgba: 0
-  m_downColor:
-    serializedVersion: 2
-    rgba: 0
-  m_leftColor:
-    serializedVersion: 2
-    rgba: 0
-  m_onCenterUpdated:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!1 &1406860774
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1406860775}
-  - component: {fileID: 1406860776}
-  m_Layer: 0
-  m_Name: ResizeTexture
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1406860775
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1406860774}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 519944847500204788}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1406860776
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1406860774}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e09bd2df1a2629f498bea9d3c2e57c1a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: be.elab.texturetoolbox::TextureMono_GraphBlitResizeRenderTexture
-  m_source: {fileID: 0}
-  m_result: {fileID: 0}
-  m_targetWidth: 320
-  m_targetHeight: 232
-  m_blitEveryFrame: 0
-  m_onCreated:
-    m_PersistentCalls:
-      m_Calls: []
-  m_onUpdated:
-    m_PersistentCalls:
-      m_Calls: []
-  m_timeToBlit:
-    m_watchTimeInTick: 0
-    m_watchTimeInMilliseconds: 0
-    m_dateTimeInTick: 0
-    m_dateTimeInMilliseconds: 0
-    m_events:
-      m_watchTicks:
-        m_PersistentCalls:
-          m_Calls: []
-      m_dateTimeTicks:
-        m_PersistentCalls:
-          m_Calls: []
---- !u!1 &1755168712
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1755168714}
-  - component: {fileID: 1755168713}
-  - component: {fileID: 1755168715}
-  m_Layer: 0
-  m_Name: GPU2CPU
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1755168713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1755168712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b665ec612775d444ab10cdfd8ecede8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: be.elab.texturetoolbox::TextureMono_RenderTextureToAsyncReadbackColor32
-  m_givenTexture: {fileID: 0}
-  m_onNewRenderTexture:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1755168715}
-        m_TargetAssemblyTypeName: TextureMono_RenderTextureToWidthHeightRelay, be.elab.texturetoolbox
-        m_MethodName: PushIn
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_onReadbackNativeColor32Ready:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1154000420}
-        m_TargetAssemblyTypeName: TextureMono_FetchCrossBorderColorPoints, be.elab.texturetoolbox
-        m_MethodName: SetTextureAsNativeColor
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_timeUsedAfterReadBack:
-    m_watchTimeInTick: 0
-    m_watchTimeInMilliseconds: 0
-    m_dateTimeInTick: 0
-    m_dateTimeInMilliseconds: 0
-    m_events:
-      m_watchTicks:
-        m_PersistentCalls:
-          m_Calls: []
-      m_dateTimeTicks:
-        m_PersistentCalls:
-          m_Calls: []
-  m_readBackCount: 0
-  m_readBackLenght: 0
-  m_textureRenderingWidth: 0
-  m_textureRenderingHeight: 0
-  m_useUpdate: 0
---- !u!4 &1755168714
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1755168712}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1154000419}
-  m_Father: {fileID: 519944847500204788}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1755168715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1755168712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25c5981cd9e21ff4c954a52233b2a4f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: be.elab.texturetoolbox::TextureMono_RenderTextureToWidthHeightRelay
-  m_onValueWidthHeightChanged:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1154000420}
-        m_TargetAssemblyTypeName: TextureMono_FetchCrossBorderColorPoints, be.elab.texturetoolbox
-        m_MethodName: SetTextureDimension
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_width: 0
-  m_height: 0
-  m_count: 0
 --- !u!114 &2095227047 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8004882877126145126, guid: 06ac098e50eb63d4e85233211988d177, type: 3}
@@ -883,7 +578,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &2097072103
 MeshFilter:
@@ -956,407 +650,76 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 719135819363030050, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 719135819363030050, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 910509675324466204, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_fontSize
-      value: 9.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 1206781575251603303, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_fontSize
-      value: 36.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1325128385229106538, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1973621994370066094, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1973621994370066094, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1979117108529877772, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
       propertyPath: m_Name
       value: DragDropRealityHacker
       objectReference: {fileID: 0}
-    - target: {fileID: 3169264717775892448, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_useDefaultWebcamIfNotFound
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3169264717775892448, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: 'm_nameOfWebcamsToUse.Array.data[0]'
-      value: MiraBox Video Capture
-      objectReference: {fileID: 0}
-    - target: {fileID: 3169264717775892448, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: 'm_nameOfWebcamsToUse.Array.data[1]'
-      value: USB Camera
-      objectReference: {fileID: 0}
-    - target: {fileID: 3169264717775892448, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: 'm_nameOfWebcamsToUse.Array.data[2]'
-      value: MTD camera
-      objectReference: {fileID: 0}
-    - target: {fileID: 3372791425504703637, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3372791425504703637, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3372791425504703637, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3372791425504703637, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3372791425504703637, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3372791425504703637, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3826976286320509344, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_fontSize
-      value: 27.95
-      objectReference: {fileID: 0}
-    - target: {fileID: 3886974084517137141, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_fontSize
-      value: 7.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6037136695105854878, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6037136695105854878, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6665600282303704026, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_onRenderTextureRelay.m_PersistentCalls.m_Calls.Array.size
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6665600282303704026, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_onRenderTextureRelay.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1406860776}
-    - target: {fileID: 6665600282303704026, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_onRenderTextureRelay.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 1755168713}
-    - target: {fileID: 6665600282303704026, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_onRenderTextureRelay.m_PersistentCalls.m_Calls.Array.data[2].m_Target
-      value: 
-      objectReference: {fileID: 519944847500204787}
-    - target: {fileID: 6665600282303704026, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_onRenderTextureRelay.m_PersistentCalls.m_Calls.Array.data[3].m_Target
-      value: 
-      objectReference: {fileID: 519944847500204786}
-    - target: {fileID: 6665600282303704026, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_onRenderTextureRelay.m_PersistentCalls.m_Calls.Array.data[4].m_Target
-      value: 
-      objectReference: {fileID: 519944847500204785}
-    - target: {fileID: 6665600282303704026, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_onRenderTextureRelay.m_PersistentCalls.m_Calls.Array.data[5].m_Target
-      value: 
-      objectReference: {fileID: 519944847500204784}
-    - target: {fileID: 6665600282303704026, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_onRenderTextureRelay.m_PersistentCalls.m_Calls.Array.data[6].m_Target
-      value: 
-      objectReference: {fileID: 519944847500204783}
-    - target: {fileID: 6665600282303704026, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_onRenderTextureRelay.m_PersistentCalls.m_Calls.Array.data[7].m_Target
-      value: 
-      objectReference: {fileID: 519944847500204782}
-    - target: {fileID: 6665600282303704026, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_onRenderTextureRelay.m_PersistentCalls.m_Calls.Array.data[8].m_Target
-      value: 
-      objectReference: {fileID: 519944847500204781}
     - target: {fileID: 6665600282303704026, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
       propertyPath: m_onRenderTextureRelay.m_PersistentCalls.m_Calls.Array.data[9].m_Target
       value: 
       objectReference: {fileID: 2095227047}
-    - target: {fileID: 6665600282303704026, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_onRenderTextureRelay.m_PersistentCalls.m_Calls.Array.data[7].m_CallState
-      value: 2
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
+--- !u!1001 &7988701791803120687
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 487465163359331560, guid: 5d40c1bc6f8ae0144bcb0d572b0c54e1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.41038
       objectReference: {fileID: 0}
-    - target: {fileID: 6665600282303704026, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_onRenderTextureRelay.m_PersistentCalls.m_Calls.Array.data[8].m_CallState
-      value: 2
+    - target: {fileID: 487465163359331560, guid: 5d40c1bc6f8ae0144bcb0d572b0c54e1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 6665600282303704026, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_onRenderTextureRelay.m_PersistentCalls.m_Calls.Array.data[9].m_CallState
-      value: 2
+    - target: {fileID: 487465163359331560, guid: 5d40c1bc6f8ae0144bcb0d572b0c54e1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.7096
       objectReference: {fileID: 0}
-    - target: {fileID: 6665600282303704026, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_onRenderTextureRelay.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetAndResizeTexture
+    - target: {fileID: 487465163359331560, guid: 5d40c1bc6f8ae0144bcb0d572b0c54e1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6665600282303704026, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_onRenderTextureRelay.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SetAndRequestReadBackOfTexture
-      objectReference: {fileID: 0}
-    - target: {fileID: 6665600282303704026, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_onRenderTextureRelay.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: set_texture
-      objectReference: {fileID: 0}
-    - target: {fileID: 6665600282303704026, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_onRenderTextureRelay.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
-      value: set_texture
-      objectReference: {fileID: 0}
-    - target: {fileID: 6665600282303704026, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_onRenderTextureRelay.m_PersistentCalls.m_Calls.Array.data[6].m_MethodName
-      value: PushInTexture
-      objectReference: {fileID: 0}
-    - target: {fileID: 6665600282303704026, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_onRenderTextureRelay.m_PersistentCalls.m_Calls.Array.data[7].m_MethodName
-      value: PushInTexture
-      objectReference: {fileID: 0}
-    - target: {fileID: 6665600282303704026, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_onRenderTextureRelay.m_PersistentCalls.m_Calls.Array.data[8].m_MethodName
-      value: SetRenderTexture
-      objectReference: {fileID: 0}
-    - target: {fileID: 6665600282303704026, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_onRenderTextureRelay.m_PersistentCalls.m_Calls.Array.data[9].m_MethodName
-      value: PushInRenderTextureToRelay
-      objectReference: {fileID: 0}
-    - target: {fileID: 6665600282303704026, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_onRenderTextureRelay.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: TextureMono_GraphBlitResizeRenderTexture, be.elab.texturetoolbox
-      objectReference: {fileID: 0}
-    - target: {fileID: 6665600282303704026, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_onRenderTextureRelay.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: TextureMono_RenderTextureToAsyncReadbackColor32, be.elab.texturetoolbox
-      objectReference: {fileID: 0}
-    - target: {fileID: 6665600282303704026, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_onRenderTextureRelay.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: UnityEngine.UI.RawImage, UnityEngine.UI
-      objectReference: {fileID: 0}
-    - target: {fileID: 6665600282303704026, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_onRenderTextureRelay.m_PersistentCalls.m_Calls.Array.data[4].m_TargetAssemblyTypeName
-      value: UnityEngine.UI.RawImage, UnityEngine.UI
-      objectReference: {fileID: 0}
-    - target: {fileID: 6665600282303704026, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_onRenderTextureRelay.m_PersistentCalls.m_Calls.Array.data[6].m_TargetAssemblyTypeName
-      value: Eloi.TextureUtility.TextureMono_TextureToRatioRelay, be.elab.texturetoolbox
-      objectReference: {fileID: 0}
-    - target: {fileID: 6665600282303704026, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_onRenderTextureRelay.m_PersistentCalls.m_Calls.Array.data[7].m_TargetAssemblyTypeName
-      value: Eloi.TextureUtility.TextureMono_TextureToRatioRelay, be.elab.texturetoolbox
-      objectReference: {fileID: 0}
-    - target: {fileID: 6665600282303704026, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_onRenderTextureRelay.m_PersistentCalls.m_Calls.Array.data[8].m_TargetAssemblyTypeName
-      value: Eloi.TextureUtility.TextureMono_RenderTextureToFileRelativeSaveWithDate,
-        be.elab.texturetoolbox
-      objectReference: {fileID: 0}
-    - target: {fileID: 6665600282303704026, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_onRenderTextureRelay.m_PersistentCalls.m_Calls.Array.data[9].m_TargetAssemblyTypeName
-      value: Eloi.MaskAndShaderXR.MaskMono_RelayRenderTexture, be.elab.maskandshaderxr
-      objectReference: {fileID: 0}
-    - target: {fileID: 6665600282303704026, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_onRenderTextureRelay.m_PersistentCalls.m_Calls.Array.data[7].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 6665600282303704026, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_onRenderTextureRelay.m_PersistentCalls.m_Calls.Array.data[8].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 6665600282303704026, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_onRenderTextureRelay.m_PersistentCalls.m_Calls.Array.data[9].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 7114092750066334191, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_AnchorMax.y
+    - target: {fileID: 487465163359331560, guid: 5d40c1bc6f8ae0144bcb0d572b0c54e1, type: 3}
+      propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7114092750066334191, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_AnchorMin.y
+    - target: {fileID: 487465163359331560, guid: 5d40c1bc6f8ae0144bcb0d572b0c54e1, type: 3}
+      propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7114092750066334191, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_SizeDelta.x
+    - target: {fileID: 487465163359331560, guid: 5d40c1bc6f8ae0144bcb0d572b0c54e1, type: 3}
+      propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7114092750066334191, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_SizeDelta.y
+    - target: {fileID: 487465163359331560, guid: 5d40c1bc6f8ae0144bcb0d572b0c54e1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7114092750066334191, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_AnchoredPosition.x
+    - target: {fileID: 487465163359331560, guid: 5d40c1bc6f8ae0144bcb0d572b0c54e1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7114092750066334191, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_AnchoredPosition.y
+    - target: {fileID: 487465163359331560, guid: 5d40c1bc6f8ae0144bcb0d572b0c54e1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7326695555524763148, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7326695555524763148, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7326695555524763148, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7326695555524763148, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7763210731564931821, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_onRenderTextureCreated.m_PersistentCalls.m_Calls.Array.data[2].m_Target
-      value: 
-      objectReference: {fileID: 2097072100}
-    - target: {fileID: 7900490575411240991, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7900490575411240991, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7900490575411240991, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7900490575411240991, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7900490575411240991, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7900490575411240991, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7984188754002419488, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_fontSize
-      value: 6.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468287243744503340, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_fontSize
-      value: 27.95
-      objectReference: {fileID: 0}
-    - target: {fileID: 9152277469662252301, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9152277469662252301, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
+    - target: {fileID: 4728435545419784636, guid: 5d40c1bc6f8ae0144bcb0d572b0c54e1, type: 3}
+      propertyPath: m_Name
+      value: PF_Manual
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 4685091011773634563, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      insertIndex: 1
-      addedObject: {fileID: 1755168714}
-    - targetCorrespondingSourceObject: {fileID: 4685091011773634563, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      insertIndex: 2
-      addedObject: {fileID: 1406860775}
-    - targetCorrespondingSourceObject: {fileID: 5504564094996815714, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-      insertIndex: 3
-      addedObject: {fileID: 1148811991}
+    m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
---- !u!114 &519944847500204781 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1265716505961074070, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-  m_PrefabInstance: {fileID: 519944847500204780}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e36ec707eace5f9409d9173033ca312a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: be.elab.texturetoolbox::Eloi.TextureUtility.TextureMono_RenderTextureToFileRelativeSaveWithDate
---- !u!114 &519944847500204782 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2470811875745637408, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-  m_PrefabInstance: {fileID: 519944847500204780}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c512b46bd70f35d4c956a2f6aa4f0672, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: be.elab.texturetoolbox::Eloi.TextureUtility.TextureMono_TextureToRatioRelay
---- !u!114 &519944847500204783 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1091870894588453573, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-  m_PrefabInstance: {fileID: 519944847500204780}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c512b46bd70f35d4c956a2f6aa4f0672, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: be.elab.texturetoolbox::Eloi.TextureUtility.TextureMono_TextureToRatioRelay
---- !u!114 &519944847500204784 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1660250018123327672, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-  m_PrefabInstance: {fileID: 519944847500204780}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c512b46bd70f35d4c956a2f6aa4f0672, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: be.elab.texturetoolbox::Eloi.TextureUtility.TextureMono_TextureToRatioRelay
---- !u!114 &519944847500204785 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8939024717236063040, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-  m_PrefabInstance: {fileID: 519944847500204780}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.RawImage
---- !u!114 &519944847500204786 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4483591226714561269, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-  m_PrefabInstance: {fileID: 519944847500204780}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.RawImage
---- !u!114 &519944847500204787 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6314593531479578531, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-  m_PrefabInstance: {fileID: 519944847500204780}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.RawImage
---- !u!4 &519944847500204788 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4685091011773634563, guid: 6c6d9e9a582db43469d7bd8960e063f8, type: 3}
-  m_PrefabInstance: {fileID: 519944847500204780}
-  m_PrefabAsset: {fileID: 0}
+  m_SourcePrefab: {fileID: 100100000, guid: 5d40c1bc6f8ae0144bcb0d572b0c54e1, type: 3}
 --- !u!1001 &8225160934267626594
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1409,10 +772,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mask_RedBlue
       objectReference: {fileID: 0}
-    - target: {fileID: 6384193332074975027, guid: 06ac098e50eb63d4e85233211988d177, type: 3}
-      propertyPath: m_onBlitsComputed.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1428,3 +787,4 @@ SceneRoots:
   - {fileID: 519944847500204780}
   - {fileID: 847086470}
   - {fileID: 8225160934267626594}
+  - {fileID: 7988701791803120687}

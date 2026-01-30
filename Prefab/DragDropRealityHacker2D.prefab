@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &38036051017020306
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8088995132998348299}
+  m_Layer: 0
+  m_Name: Inverse Horizontal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8088995132998348299
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38036051017020306}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5504564094996815714}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &132904719280170442
 GameObject:
   m_ObjectHideFlags: 0
@@ -79,6 +110,68 @@ MonoBehaviour:
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
   m_ScrollDeltaPerTick: 6
+--- !u!1 &284749415114834971
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4754866571615190056}
+  - component: {fileID: 5007262021896618415}
+  m_Layer: 0
+  m_Name: ImportAfterSmallTime
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4754866571615190056
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284749415114834971}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5504564094996815714}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5007262021896618415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284749415114834971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 542b8e79a88e9854781fcffc0a0719c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: be.elab.texturetoolbox::Eloi.TextureUtility.TextureMono_DelayTick
+  m_secondsBeforeTicks: 1
+  m_onTick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3108084120686954292}
+        m_TargetAssemblyTypeName: Eloi.TextureUtility.TextureMono_RenderTextureProcessList,
+          be.elab.texturetoolbox
+        m_MethodName: AutoCompleteProcessWithChildren
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_tickAtEnable: 1
 --- !u!1 &473904363811905401
 GameObject:
   m_ObjectHideFlags: 0
@@ -155,8 +248,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7117886855761619472}
-  - {fileID: 7935156048748464078}
+  - {fileID: 4112837106974198102}
   m_Father: {fileID: 5504564094996815714}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3108084120686954292
@@ -171,42 +263,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4ab96d977323be4cb26a4321b942cfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: be.elab.texturetoolbox::Eloi.TextureUtility.TextureMono_RenderTextureProcessList
-  m_onSetGivenTexture:
-    m_PersistentCalls:
-      m_Calls: []
-  m_onResultProcessed:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6665600282303704026}
-        m_TargetAssemblyTypeName: Eloi.TextureUtility.TextureMono_RelayRenderTexture,
-          be.elab.texturetoolbox
-        m_MethodName: PushIn
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_onStartUsing:
-    m_PersistentCalls:
-      m_Calls: []
-  m_onStopUsing:
-    m_PersistentCalls:
-      m_Calls: []
+  m_events:
+    m_onSetGivenTexture:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4506921629469646048}
+          m_TargetAssemblyTypeName: Eloi.TextureUtility.TextureMono_RelayRenderTexture,
+            be.elab.texturetoolbox
+          m_MethodName: PushIn
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    m_onResultProcessed:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6665600282303704026}
+          m_TargetAssemblyTypeName: Eloi.TextureUtility.TextureMono_RelayRenderTexture,
+            be.elab.texturetoolbox
+          m_MethodName: PushIn
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    m_onStartUsing:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onStopUsing:
+      m_PersistentCalls:
+        m_Calls: []
   m_givenDebug: {fileID: 0}
   m_resultDebug: {fileID: 0}
   m_lastProcessTimeInTicksEstimation: 0
-  m_processes:
-  - {fileID: 5551561335857566422}
-  - {fileID: 197688933655216309}
+  m_processes: []
   m_counter: 0
   m_counterLoop: 1
   m_currentFocus: {fileID: 0}
   m_useUpdateToProcess: 0
-  m_onCurrentFocusChanged:
+  m_onCurrentProcessFocusChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onCurrentDocumentationFocusChanged:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7752022009533871658}
@@ -224,6 +331,117 @@ MonoBehaviour:
         m_CallState: 2
   m_autoCompleteAtAwakeWithChildren: 1
   m_disableAllAtAwake: 1
+--- !u!1 &1448946496460482524
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8844379681628964060}
+  - component: {fileID: 3996435362483871228}
+  - component: {fileID: 5936306401025346060}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &8844379681628964060
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448946496460482524}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1227169313545081339}
+  m_Father: {fileID: 4295232256136255546}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.8363099}
+  m_AnchorMax: {x: 0.72681844, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &3996435362483871228
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448946496460482524}
+  m_CullTransparentMesh: 1
+--- !u!114 &5936306401025346060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448946496460482524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &1585316374612007361
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4112837106974198102}
+  m_Layer: 0
+  m_Name: Import
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4112837106974198102
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585316374612007361}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6091865830945087692}
+  - {fileID: 414285854830449333}
+  - {fileID: 9042543514391554852}
+  - {fileID: 8407783192745155624}
+  m_Father: {fileID: 2002947749925659458}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1979117108529877772
 GameObject:
   m_ObjectHideFlags: 0
@@ -276,7 +494,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8021566019538982462
 Transform:
   m_ObjectHideFlags: 0
@@ -322,6 +540,536 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_tickAtEnable: 1
+--- !u!1 &2646791886642825053
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 128715352119276492}
+  - component: {fileID: 3902724373888858900}
+  m_Layer: 0
+  m_Name: Fetch Cross Border Color
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &128715352119276492
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2646791886642825053}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1637142390717395518}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3902724373888858900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2646791886642825053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e80b6148ea352742952691bbeb8a011, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: be.elab.texturetoolbox::TextureMono_FetchCrossBorderColorPoints
+  m_widthOfTexture: 0
+  m_heightOfTexture: 0
+  m_expectedLenght: 0
+  m_nativeArrayLenght: 0
+  m_centerColor:
+    serializedVersion: 2
+    rgba: 0
+  m_topLeftColor:
+    serializedVersion: 2
+    rgba: 0
+  m_topRightColor:
+    serializedVersion: 2
+    rgba: 0
+  m_bottomLeftColor:
+    serializedVersion: 2
+    rgba: 0
+  m_bottomRightColor:
+    serializedVersion: 2
+    rgba: 0
+  m_topColor:
+    serializedVersion: 2
+    rgba: 0
+  m_rightColor:
+    serializedVersion: 2
+    rgba: 0
+  m_downColor:
+    serializedVersion: 2
+    rgba: 0
+  m_leftColor:
+    serializedVersion: 2
+    rgba: 0
+  m_onCenterUpdated:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &3488073103745479360
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9042543514391554852}
+  - component: {fileID: 5209393903830980124}
+  m_Layer: 0
+  m_Name: SearchMaterialShader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9042543514391554852
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3488073103745479360}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.41038, y: 0, z: 0.7096}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 473897630537312026}
+  m_Father: {fileID: 4112837106974198102}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5209393903830980124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3488073103745479360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd29dafeda2ce21489fb0dd3da4269ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: be.elab.texturetoolbox::Eloi.TextureUtility.TextureMono_SearchForMaterialShaderInResources
+  m_relativePathInResources: TextureToolboxSample
+  m_found: []
+  m_onScriptableListFound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3336428548305748408}
+        m_TargetAssemblyTypeName: Eloi.TextureUtility.TextureMono_GenerateMaterialShaderDocViewer,
+          be.elab.texturetoolbox
+        m_MethodName: PushIn
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_loadAtAwake: 1
+--- !u!1 &3580101511297811435
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 414285854830449333}
+  - component: {fileID: 8493696202090520442}
+  m_Layer: 0
+  m_Name: SeachComputeShader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &414285854830449333
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3580101511297811435}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.41038, y: 0, z: 0.7096}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7987255294812776369}
+  m_Father: {fileID: 4112837106974198102}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8493696202090520442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3580101511297811435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c751bd7fa2c32914d8af704b82eb73ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: be.elab.texturetoolbox::Eloi.TextureUtility.TextureMono_SearchForComputeShaderFileInResources
+  m_relativePathInResources: UndocumentedComputeShader
+  m_found: []
+  m_onScriptableListFound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 109373661235815311}
+        m_TargetAssemblyTypeName: Eloi.TextureUtility.TextureMono_GenerateComputeShaderUnDocFileViewer,
+          be.elab.texturetoolbox
+        m_MethodName: PushIn
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_loadAtAwake: 1
+--- !u!1 &3650972339721626997
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3255561785345045851}
+  - component: {fileID: 847449125217217469}
+  m_Layer: 0
+  m_Name: ResizeTexture
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3255561785345045851
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3650972339721626997}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4685091011773634563}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &847449125217217469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3650972339721626997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e09bd2df1a2629f498bea9d3c2e57c1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: be.elab.texturetoolbox::TextureMono_GraphBlitResizeRenderTexture
+  m_source: {fileID: 0}
+  m_result: {fileID: 0}
+  m_targetWidth: 320
+  m_targetHeight: 232
+  m_blitEveryFrame: 0
+  m_onCreated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onUpdated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_timeToBlit:
+    m_watchTimeInTick: 0
+    m_watchTimeInMilliseconds: 0
+    m_dateTimeInTick: 0
+    m_dateTimeInMilliseconds: 0
+    m_events:
+      m_watchTicks:
+        m_PersistentCalls:
+          m_Calls: []
+      m_dateTimeTicks:
+        m_PersistentCalls:
+          m_Calls: []
+--- !u!1 &4434203032223904692
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 473897630537312026}
+  - component: {fileID: 3336428548305748408}
+  m_Layer: 0
+  m_Name: GenerateMaterialShaderViewer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &473897630537312026
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4434203032223904692}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9042543514391554852}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3336428548305748408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4434203032223904692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ddfd4e06f11d3245adfd30869de1534, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: be.elab.texturetoolbox::Eloi.TextureUtility.TextureMono_GenerateMaterialShaderDocViewer
+  m_whereToCreate: {fileID: 2002947749925659458}
+  m_prefabToUseForViewer: {fileID: 7964533671973195157}
+  m_onFinishCreation:
+    m_PersistentCalls:
+      m_Calls: []
+  m_nameFormatter: MS_DOC_{0}
+--- !u!1 &4650189138795063666
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1227169313545081339}
+  - component: {fileID: 2540123515115712515}
+  - component: {fileID: 6017293246397196625}
+  - component: {fileID: 4438870821448265830}
+  - component: {fileID: 3051291677839323046}
+  - component: {fileID: 4506921629469646048}
+  m_Layer: 5
+  m_Name: RawImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1227169313545081339
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4650189138795063666}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8844379681628964060}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2540123515115712515
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4650189138795063666}
+  m_CullTransparentMesh: 1
+--- !u!114 &6017293246397196625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4650189138795063666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.RawImage
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!114 &4438870821448265830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4650189138795063666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c512b46bd70f35d4c956a2f6aa4f0672, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: be.elab.texturetoolbox::Eloi.TextureUtility.TextureMono_TextureToRatioRelay
+  m_onRatioHorizontalToVertical:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3051291677839323046}
+        m_TargetAssemblyTypeName: UnityEngine.UI.AspectRatioFitter, UnityEngine.UI
+        m_MethodName: set_aspectRatio
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3051291677839323046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4650189138795063666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86710e43de46f6f4bac7c8e50813a599, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.AspectRatioFitter
+  m_AspectMode: 3
+  m_AspectRatio: 1.007703
+--- !u!114 &4506921629469646048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4650189138795063666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce46cc8a6ad55194990610f3cfda2fac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: be.elab.texturetoolbox::Eloi.TextureUtility.TextureMono_RelayRenderTexture
+  m_textureRelayed: {fileID: 0}
+  m_onRenderTextureRelay:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4438870821448265830}
+        m_TargetAssemblyTypeName: Eloi.TextureUtility.TextureMono_TextureToRatioRelay,
+          be.elab.texturetoolbox
+        m_MethodName: PushInTexture
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6017293246397196625}
+        m_TargetAssemblyTypeName: UnityEngine.UI.RawImage, UnityEngine.UI
+        m_MethodName: set_texture
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &4666300139241132823
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7987255294812776369}
+  - component: {fileID: 109373661235815311}
+  m_Layer: 0
+  m_Name: GenerateComputeShaderFileViewer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7987255294812776369
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4666300139241132823}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 414285854830449333}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &109373661235815311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4666300139241132823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3822f5b9bcf0b3a4cabf87443b5b5c90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: be.elab.texturetoolbox::Eloi.TextureUtility.TextureMono_GenerateComputeShaderUnDocFileViewer
+  m_whereToCreate: {fileID: 2002947749925659458}
+  m_prefabToUseForViewer: {fileID: 1607551330262070600, guid: 3c448df43755d964eac70c87be2926bd, type: 3}
+  m_onFinishCreation:
+    m_PersistentCalls:
+      m_Calls: []
+  m_nameFormatter: CS_UNDOC_{0}
 --- !u!1 &4728204582352882100
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,6 +1103,9 @@ Transform:
   - {fileID: 8021566019538982462}
   - {fileID: 5816527481421347495}
   - {fileID: 4654235999595559503}
+  - {fileID: 8088995132998348299}
+  - {fileID: 7973285761159700380}
+  - {fileID: 4754866571615190056}
   - {fileID: 2002947749925659458}
   - {fileID: 5454884130639763548}
   m_Father: {fileID: 4685091011773634563}
@@ -402,27 +1153,14 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Eloi.PongTracking.TextureMono_SetMaterialsAndRendererWithTexture,
-          be.elab.texturetoolbox
-        m_MethodName: SetTexture
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   m_onRenderTextureBlit:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3108084120686954292}
         m_TargetAssemblyTypeName: Eloi.TextureUtility.TextureMono_RenderTextureProcessList,
           be.elab.texturetoolbox
-        m_MethodName: ProcessGivenTexture
-        m_Mode: 1
+        m_MethodName: SetAndProcessGivenTexture
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -492,6 +1230,56 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &5426802997715910123
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6091865830945087692}
+  - component: {fileID: 5489136103986210495}
+  m_Layer: 0
+  m_Name: SeachShaderGraph
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6091865830945087692
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5426802997715910123}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.41038, y: 0, z: 0.7096}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4112837106974198102}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5489136103986210495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5426802997715910123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 971739a93d9073f4aaf9f9037807dcff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: be.elab.texturetoolbox::Eloi.TextureUtility.TextureMono_SearchForShaderGraphInResources
+  m_relativePathInResources: TextureToolboxSample
+  m_found: []
+  m_onScriptableListFound:
+    m_PersistentCalls:
+      m_Calls: []
+  m_loadAtAwake: 1
 --- !u!1 &6536316797429945073
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,7 +1296,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5816527481421347495
 Transform:
   m_ObjectHideFlags: 0
@@ -639,6 +1427,31 @@ MonoBehaviour:
   m_onRenderTextureRelay:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 847449125217217469}
+        m_TargetAssemblyTypeName: TextureMono_GraphBlitResizeRenderTexture, be.elab.texturetoolbox
+        m_MethodName: SetAndResizeTexture
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4550740902464434497}
+        m_TargetAssemblyTypeName: TextureMono_RenderTextureToAsyncReadbackColor32,
+          be.elab.texturetoolbox
+        m_MethodName: SetAndRequestReadBackOfTexture
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 6314593531479578531}
         m_TargetAssemblyTypeName: UnityEngine.UI.RawImage, UnityEngine.UI
         m_MethodName: set_texture
@@ -727,6 +1540,257 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Eloi.MaskAndShaderXR.MaskMono_RelayRenderTexture,
+          be.elab.maskandshaderxr
+        m_MethodName: PushInRenderTextureToRelay
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &7892838221692226315
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1637142390717395518}
+  - component: {fileID: 4550740902464434497}
+  - component: {fileID: 4050295716357947140}
+  m_Layer: 0
+  m_Name: GPU2CPU
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1637142390717395518
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7892838221692226315}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 128715352119276492}
+  m_Father: {fileID: 4685091011773634563}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4550740902464434497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7892838221692226315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b665ec612775d444ab10cdfd8ecede8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: be.elab.texturetoolbox::TextureMono_RenderTextureToAsyncReadbackColor32
+  m_givenTexture: {fileID: 0}
+  m_onNewRenderTexture:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4050295716357947140}
+        m_TargetAssemblyTypeName: TextureMono_RenderTextureToWidthHeightRelay, be.elab.texturetoolbox
+        m_MethodName: PushIn
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_onReadbackNativeColor32Ready:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3902724373888858900}
+        m_TargetAssemblyTypeName: TextureMono_FetchCrossBorderColorPoints, be.elab.texturetoolbox
+        m_MethodName: SetTextureAsNativeColor
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_timeUsedAfterReadBack:
+    m_watchTimeInTick: 0
+    m_watchTimeInMilliseconds: 0
+    m_dateTimeInTick: 0
+    m_dateTimeInMilliseconds: 0
+    m_events:
+      m_watchTicks:
+        m_PersistentCalls:
+          m_Calls: []
+      m_dateTimeTicks:
+        m_PersistentCalls:
+          m_Calls: []
+  m_readBackCount: 0
+  m_readBackLenght: 0
+  m_textureRenderingWidth: 0
+  m_textureRenderingHeight: 0
+  m_useUpdate: 0
+--- !u!114 &4050295716357947140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7892838221692226315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25c5981cd9e21ff4c954a52233b2a4f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: be.elab.texturetoolbox::TextureMono_RenderTextureToWidthHeightRelay
+  m_onValueWidthHeightChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3902724373888858900}
+        m_TargetAssemblyTypeName: TextureMono_FetchCrossBorderColorPoints, be.elab.texturetoolbox
+        m_MethodName: SetTextureDimension
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_width: 0
+  m_height: 0
+  m_count: 0
+--- !u!1 &8236638771419216310
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8407783192745155624}
+  - component: {fileID: 8720935372314104156}
+  m_Layer: 0
+  m_Name: SeachComputeShader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8407783192745155624
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8236638771419216310}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.41038, y: 0, z: 0.7096}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6263966836915592726}
+  m_Father: {fileID: 4112837106974198102}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8720935372314104156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8236638771419216310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd624972cae0ae14d8a15b6498baf0d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: be.elab.texturetoolbox::Eloi.TextureUtility.TextureMono_SearchForComputeShaderInResources
+  m_relativePathInResources: TextureToolboxSample
+  m_found: []
+  m_onScriptableListFound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 758325868270586252}
+        m_TargetAssemblyTypeName: Eloi.TextureUtility.TextureMono_GenerateComputeShaderDocViewer,
+          be.elab.texturetoolbox
+        m_MethodName: PushIn
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_loadAtAwake: 1
+--- !u!1 &8669605993082126793
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6263966836915592726}
+  - component: {fileID: 758325868270586252}
+  m_Layer: 0
+  m_Name: GenerateComputeShaderViewer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6263966836915592726
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8669605993082126793}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8407783192745155624}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &758325868270586252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8669605993082126793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d5ff9352fd5bf8479003a0e7c8cddc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: be.elab.texturetoolbox::Eloi.TextureUtility.TextureMono_GenerateComputeShaderDocViewer
+  m_whereToCreate: {fileID: 2002947749925659458}
+  m_prefabToUseForViewer: {fileID: 1607551330262070600, guid: f91fc499f5658ee47825562a11d067c2, type: 3}
+  m_onFinishCreation:
+    m_PersistentCalls:
+      m_Calls: []
+  m_nameFormatter: CS_DOC_{0}
 --- !u!1 &8754821573582430064
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,6 +1823,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 616762783304092035}
+  - {fileID: 8844379681628964060}
   m_Father: {fileID: 63969983132578454}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -784,7 +1849,6 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_UseReflectionProbes: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -846,7 +1910,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4654235999595559503
 Transform:
   m_ObjectHideFlags: 0
@@ -932,6 +1996,41 @@ Transform:
   - {fileID: 953913095284105901}
   m_Father: {fileID: 63969983132578454}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8910037998211437636
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7973285761159700380}
+  m_Layer: 0
+  m_Name: Example
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7973285761159700380
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8910037998211437636}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1738433340016085285}
+  - {fileID: 4759511603159543738}
+  - {fileID: 976250228533092366}
+  - {fileID: 6212635853388834921}
+  m_Father: {fileID: 5504564094996815714}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9201332928572214451
 GameObject:
   m_ObjectHideFlags: 0
@@ -963,6 +2062,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5504564094996815714}
+  - {fileID: 1637142390717395518}
+  - {fileID: 3255561785345045851}
   - {fileID: 3348366322459940781}
   m_Father: {fileID: 63969983132578454}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1001,11 +2102,77 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_autoStartTheWebcam: 1
-  m_useDefaultWebcamIfNotFound: 0
+  m_useDefaultWebcamIfNotFound: 1
   m_defaultWebcamIfNotFound: 0
   m_webcamFound: 0
   m_selected: 
   m_availableWebcams: []
+--- !u!1001 &526322202333613437
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7973285761159700380}
+    m_Modifications:
+    - target: {fileID: 1141067829969733790, guid: f91fc499f5658ee47825562a11d067c2, type: 3}
+      propertyPath: m_useOnEnable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1607551330262070600, guid: f91fc499f5658ee47825562a11d067c2, type: 3}
+      propertyPath: m_Name
+      value: PF_ComputeShader
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990254293548507847, guid: f91fc499f5658ee47825562a11d067c2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.41038
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990254293548507847, guid: f91fc499f5658ee47825562a11d067c2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990254293548507847, guid: f91fc499f5658ee47825562a11d067c2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.7096
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990254293548507847, guid: f91fc499f5658ee47825562a11d067c2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990254293548507847, guid: f91fc499f5658ee47825562a11d067c2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990254293548507847, guid: f91fc499f5658ee47825562a11d067c2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990254293548507847, guid: f91fc499f5658ee47825562a11d067c2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990254293548507847, guid: f91fc499f5658ee47825562a11d067c2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990254293548507847, guid: f91fc499f5658ee47825562a11d067c2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990254293548507847, guid: f91fc499f5658ee47825562a11d067c2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f91fc499f5658ee47825562a11d067c2, type: 3}
+--- !u!4 &4759511603159543738 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4990254293548507847, guid: f91fc499f5658ee47825562a11d067c2, type: 3}
+  m_PrefabInstance: {fileID: 526322202333613437}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1268471968449907393
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1079,55 +2246,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e36ec707eace5f9409d9173033ca312a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: be.elab.texturetoolbox::Eloi.TextureUtility.TextureMono_RenderTextureToFileRelativeSaveWithDate
---- !u!1001 &2357343399071910331
+--- !u!1001 &3518935497632588428
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 2002947749925659458}
+    m_TransformParent: {fileID: 7973285761159700380}
     m_Modifications:
-    - target: {fileID: 4826515528481715350, guid: 9ab589a277811b4449180f8667fdc060, type: 3}
+    - target: {fileID: 1135438129829842170, guid: d2d93f2cc51aca74092a1a16e2d1dc90, type: 3}
       propertyPath: m_Name
-      value: ComputeShaderWrapper Example
+      value: PRT_SG_GrayScale
       objectReference: {fileID: 0}
-    - target: {fileID: 5668238862438813301, guid: 9ab589a277811b4449180f8667fdc060, type: 3}
+    - target: {fileID: 4420726523736932994, guid: d2d93f2cc51aca74092a1a16e2d1dc90, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.35745
       objectReference: {fileID: 0}
-    - target: {fileID: 5668238862438813301, guid: 9ab589a277811b4449180f8667fdc060, type: 3}
+    - target: {fileID: 4420726523736932994, guid: d2d93f2cc51aca74092a1a16e2d1dc90, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5668238862438813301, guid: 9ab589a277811b4449180f8667fdc060, type: 3}
+    - target: {fileID: 4420726523736932994, guid: d2d93f2cc51aca74092a1a16e2d1dc90, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.56639
       objectReference: {fileID: 0}
-    - target: {fileID: 5668238862438813301, guid: 9ab589a277811b4449180f8667fdc060, type: 3}
+    - target: {fileID: 4420726523736932994, guid: d2d93f2cc51aca74092a1a16e2d1dc90, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5668238862438813301, guid: 9ab589a277811b4449180f8667fdc060, type: 3}
+    - target: {fileID: 4420726523736932994, guid: d2d93f2cc51aca74092a1a16e2d1dc90, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 5668238862438813301, guid: 9ab589a277811b4449180f8667fdc060, type: 3}
+    - target: {fileID: 4420726523736932994, guid: d2d93f2cc51aca74092a1a16e2d1dc90, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 5668238862438813301, guid: 9ab589a277811b4449180f8667fdc060, type: 3}
+    - target: {fileID: 4420726523736932994, guid: d2d93f2cc51aca74092a1a16e2d1dc90, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 5668238862438813301, guid: 9ab589a277811b4449180f8667fdc060, type: 3}
+    - target: {fileID: 4420726523736932994, guid: d2d93f2cc51aca74092a1a16e2d1dc90, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5668238862438813301, guid: 9ab589a277811b4449180f8667fdc060, type: 3}
+    - target: {fileID: 4420726523736932994, guid: d2d93f2cc51aca74092a1a16e2d1dc90, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5668238862438813301, guid: 9ab589a277811b4449180f8667fdc060, type: 3}
+    - target: {fileID: 4420726523736932994, guid: d2d93f2cc51aca74092a1a16e2d1dc90, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
@@ -1135,22 +2302,11 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9ab589a277811b4449180f8667fdc060, type: 3}
---- !u!114 &197688933655216309 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2452388518522030350, guid: 9ab589a277811b4449180f8667fdc060, type: 3}
-  m_PrefabInstance: {fileID: 2357343399071910331}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5eb244da87475014689e6c701a9c8016, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: be.elab.texturetoolbox::Eloi.TextureUtility.TextureMono_ProcessRenderTextureManualWrapper
---- !u!4 &7935156048748464078 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: d2d93f2cc51aca74092a1a16e2d1dc90, type: 3}
+--- !u!4 &976250228533092366 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 5668238862438813301, guid: 9ab589a277811b4449180f8667fdc060, type: 3}
-  m_PrefabInstance: {fileID: 2357343399071910331}
+  m_CorrespondingSourceObject: {fileID: 4420726523736932994, guid: d2d93f2cc51aca74092a1a16e2d1dc90, type: 3}
+  m_PrefabInstance: {fileID: 3518935497632588428}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3625528350524007477
 PrefabInstance:
@@ -1214,78 +2370,100 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5394382971894682488, guid: 547b399f9beabb84f87ccc0049f5f144, type: 3}
   m_PrefabInstance: {fileID: 3625528350524007477}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &3849469904409455957
+--- !u!1001 &4403869968797799946
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 2002947749925659458}
+    m_TransformParent: {fileID: 7973285761159700380}
     m_Modifications:
-    - target: {fileID: 4928909754024062262, guid: 4f325b43dc7795c49a1031bbdc52e402, type: 3}
-      propertyPath: m_Name
-      value: ShaderGrapWrapper Example
-      objectReference: {fileID: 0}
-    - target: {fileID: 6317354118154684229, guid: 4f325b43dc7795c49a1031bbdc52e402, type: 3}
-      propertyPath: m_LocalPosition.x
+    - target: {fileID: 302113203305605023, guid: df113cb2b53112043852e64b8f401b71, type: 3}
+      propertyPath: m_useUpdate
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6317354118154684229, guid: 4f325b43dc7795c49a1031bbdc52e402, type: 3}
+    - target: {fileID: 302113203305605023, guid: df113cb2b53112043852e64b8f401b71, type: 3}
+      propertyPath: m_textureFormat
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 302113203305605023, guid: df113cb2b53112043852e64b8f401b71, type: 3}
+      propertyPath: m_createMaterialCopyAtAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 302113203305605023, guid: df113cb2b53112043852e64b8f401b71, type: 3}
+      propertyPath: m_shaderGraphToApply.Array.data[0].m_material
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: 390714016cc2cc94684fc8665ddd2a04, type: 3}
+    - target: {fileID: 302113203305605023, guid: df113cb2b53112043852e64b8f401b71, type: 3}
+      propertyPath: m_onBlitsComputed.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 302113203305605023, guid: df113cb2b53112043852e64b8f401b71, type: 3}
+      propertyPath: m_onBlitsComputed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7964533671973195157}
+    - target: {fileID: 302113203305605023, guid: df113cb2b53112043852e64b8f401b71, type: 3}
+      propertyPath: m_onBlitsComputed.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2683467592989859631, guid: df113cb2b53112043852e64b8f401b71, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.41038
+      objectReference: {fileID: 0}
+    - target: {fileID: 2683467592989859631, guid: df113cb2b53112043852e64b8f401b71, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6317354118154684229, guid: 4f325b43dc7795c49a1031bbdc52e402, type: 3}
+    - target: {fileID: 2683467592989859631, guid: df113cb2b53112043852e64b8f401b71, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.7096
       objectReference: {fileID: 0}
-    - target: {fileID: 6317354118154684229, guid: 4f325b43dc7795c49a1031bbdc52e402, type: 3}
+    - target: {fileID: 2683467592989859631, guid: df113cb2b53112043852e64b8f401b71, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6317354118154684229, guid: 4f325b43dc7795c49a1031bbdc52e402, type: 3}
+    - target: {fileID: 2683467592989859631, guid: df113cb2b53112043852e64b8f401b71, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 6317354118154684229, guid: 4f325b43dc7795c49a1031bbdc52e402, type: 3}
+    - target: {fileID: 2683467592989859631, guid: df113cb2b53112043852e64b8f401b71, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 6317354118154684229, guid: 4f325b43dc7795c49a1031bbdc52e402, type: 3}
+    - target: {fileID: 2683467592989859631, guid: df113cb2b53112043852e64b8f401b71, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 6317354118154684229, guid: 4f325b43dc7795c49a1031bbdc52e402, type: 3}
+    - target: {fileID: 2683467592989859631, guid: df113cb2b53112043852e64b8f401b71, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6317354118154684229, guid: 4f325b43dc7795c49a1031bbdc52e402, type: 3}
+    - target: {fileID: 2683467592989859631, guid: df113cb2b53112043852e64b8f401b71, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6317354118154684229, guid: 4f325b43dc7795c49a1031bbdc52e402, type: 3}
+    - target: {fileID: 2683467592989859631, guid: df113cb2b53112043852e64b8f401b71, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024133268434951071, guid: df113cb2b53112043852e64b8f401b71, type: 3}
+      propertyPath: m_Name
+      value: PF_ShaderGraph
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4f325b43dc7795c49a1031bbdc52e402, type: 3}
---- !u!114 &5551561335857566422 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8675916283406237571, guid: 4f325b43dc7795c49a1031bbdc52e402, type: 3}
-  m_PrefabInstance: {fileID: 3849469904409455957}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5eb244da87475014689e6c701a9c8016, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: be.elab.texturetoolbox::Eloi.TextureUtility.TextureMono_ProcessRenderTextureManualWrapper
---- !u!4 &7117886855761619472 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: df113cb2b53112043852e64b8f401b71, type: 3}
+--- !u!4 &1738433340016085285 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 6317354118154684229, guid: 4f325b43dc7795c49a1031bbdc52e402, type: 3}
-  m_PrefabInstance: {fileID: 3849469904409455957}
+  m_CorrespondingSourceObject: {fileID: 2683467592989859631, guid: df113cb2b53112043852e64b8f401b71, type: 3}
+  m_PrefabInstance: {fileID: 4403869968797799946}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7964533671973195157 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6024133268434951071, guid: df113cb2b53112043852e64b8f401b71, type: 3}
+  m_PrefabInstance: {fileID: 4403869968797799946}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4499433997115652799
 PrefabInstance:
@@ -1301,11 +2479,11 @@ PrefabInstance:
       objectReference: {fileID: 1265716505961074070}
     - target: {fileID: 823338248597060383, guid: 7f7f6614967552f4eb90242618665e32, type: 3}
       propertyPath: m_fontSize
-      value: 28.4
+      value: 19.2
       objectReference: {fileID: 0}
     - target: {fileID: 828799995182313546, guid: 7f7f6614967552f4eb90242618665e32, type: 3}
       propertyPath: m_fontSize
-      value: 7.5
+      value: 5.1
       objectReference: {fileID: 0}
     - target: {fileID: 1206890548109250090, guid: 7f7f6614967552f4eb90242618665e32, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1342,7 +2520,15 @@ PrefabInstance:
     - target: {fileID: 2164539176284258016, guid: 7f7f6614967552f4eb90242618665e32, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 3108084120686954292}
+      objectReference: {fileID: 7752022009533871658}
+    - target: {fileID: 2164539176284258016, guid: 7f7f6614967552f4eb90242618665e32, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OpenUrl
+      objectReference: {fileID: 0}
+    - target: {fileID: 2164539176284258016, guid: 7f7f6614967552f4eb90242618665e32, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Eloi.TextureUtility.TextureMono_ProcessDescriptionSplitter, be.elab.texturetoolbox
+      objectReference: {fileID: 0}
     - target: {fileID: 2671344721392540689, guid: 7f7f6614967552f4eb90242618665e32, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1353,11 +2539,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3372749802029667800, guid: 7f7f6614967552f4eb90242618665e32, type: 3}
       propertyPath: m_fontSize
-      value: 37.25
+      value: 25.2
       objectReference: {fileID: 0}
     - target: {fileID: 3662540132178828963, guid: 7f7f6614967552f4eb90242618665e32, type: 3}
       propertyPath: m_fontSize
-      value: 9.4
+      value: 6.35
       objectReference: {fileID: 0}
     - target: {fileID: 3962636721549570876, guid: 7f7f6614967552f4eb90242618665e32, type: 3}
       propertyPath: m_Pivot.x
@@ -1461,11 +2647,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5473092906643889299, guid: 7f7f6614967552f4eb90242618665e32, type: 3}
       propertyPath: m_fontSize
-      value: 28.4
+      value: 19.2
       objectReference: {fileID: 0}
     - target: {fileID: 5817729598495876511, guid: 7f7f6614967552f4eb90242618665e32, type: 3}
       propertyPath: m_fontSize
-      value: 6.25
+      value: 4.25
       objectReference: {fileID: 0}
     - target: {fileID: 6040766569243581088, guid: 7f7f6614967552f4eb90242618665e32, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1490,6 +2676,18 @@ PrefabInstance:
     - target: {fileID: 6040766569243581088, guid: 7f7f6614967552f4eb90242618665e32, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6189500132403334293, guid: 7f7f6614967552f4eb90242618665e32, type: 3}
+      propertyPath: m_onLearnMoreUrl.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6189500132403334293, guid: 7f7f6614967552f4eb90242618665e32, type: 3}
+      propertyPath: m_onLearnMoreUrl.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8491282664940356862}
+    - target: {fileID: 6189500132403334293, guid: 7f7f6614967552f4eb90242618665e32, type: 3}
+      propertyPath: m_onLearnMoreUrl.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6619330116887012531, guid: 7f7f6614967552f4eb90242618665e32, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1623,6 +2821,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e38b9de1f25ff93448f8273785b30db8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: be.elab.texturetoolbox::Eloi.TextureUtility.TextureMono_ProcessDescriptionSplitter
+--- !u!1 &8491282664940356862 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5451092751507996225, guid: 7f7f6614967552f4eb90242618665e32, type: 3}
+  m_PrefabInstance: {fileID: 4499433997115652799}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &8939024717236063040 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4790977878473716223, guid: 7f7f6614967552f4eb90242618665e32, type: 3}
@@ -1769,3 +2972,105 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e36ec707eace5f9409d9173033ca312a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: be.elab.texturetoolbox::Eloi.TextureUtility.TextureMono_RenderTextureToFileRelativeSaveWithDate
+--- !u!1001 &8228885339770608769
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7973285761159700380}
+    m_Modifications:
+    - target: {fileID: 2595596186394735848, guid: 112698fc9e34c1c4f90638c792bc80ad, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.41038
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595596186394735848, guid: 112698fc9e34c1c4f90638c792bc80ad, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595596186394735848, guid: 112698fc9e34c1c4f90638c792bc80ad, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.7096
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595596186394735848, guid: 112698fc9e34c1c4f90638c792bc80ad, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595596186394735848, guid: 112698fc9e34c1c4f90638c792bc80ad, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595596186394735848, guid: 112698fc9e34c1c4f90638c792bc80ad, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595596186394735848, guid: 112698fc9e34c1c4f90638c792bc80ad, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595596186394735848, guid: 112698fc9e34c1c4f90638c792bc80ad, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595596186394735848, guid: 112698fc9e34c1c4f90638c792bc80ad, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595596186394735848, guid: 112698fc9e34c1c4f90638c792bc80ad, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5386251902679996690, guid: 112698fc9e34c1c4f90638c792bc80ad, type: 3}
+      propertyPath: m_Name
+      value: PF_Manual_ShaderGraphExample
+      objectReference: {fileID: 0}
+    - target: {fileID: 8852755189351055674, guid: 112698fc9e34c1c4f90638c792bc80ad, type: 3}
+      propertyPath: m_shaderGraphToApply.Array.data[0].m_active
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8852755189351055674, guid: 112698fc9e34c1c4f90638c792bc80ad, type: 3}
+      propertyPath: m_onBlitsComputed.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8852755189351055674, guid: 112698fc9e34c1c4f90638c792bc80ad, type: 3}
+      propertyPath: m_onBlitsComputed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1139709646734867037}
+    - target: {fileID: 8852755189351055674, guid: 112698fc9e34c1c4f90638c792bc80ad, type: 3}
+      propertyPath: m_onBlitsComputed.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8852755189351055674, guid: 112698fc9e34c1c4f90638c792bc80ad, type: 3}
+      propertyPath: m_onBlitsComputed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetResultCallback
+      objectReference: {fileID: 0}
+    - target: {fileID: 8852755189351055674, guid: 112698fc9e34c1c4f90638c792bc80ad, type: 3}
+      propertyPath: m_onBlitsComputed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Eloi.TextureUtility.TextureMono_NoParamsWrapperProcessWithManualSetup,
+        be.elab.texturetoolbox
+      objectReference: {fileID: 0}
+    - target: {fileID: 8852755189351055674, guid: 112698fc9e34c1c4f90638c792bc80ad, type: 3}
+      propertyPath: m_onBlitsComputed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 112698fc9e34c1c4f90638c792bc80ad, type: 3}
+--- !u!114 &1139709646734867037 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9071323307978385116, guid: 112698fc9e34c1c4f90638c792bc80ad, type: 3}
+  m_PrefabInstance: {fileID: 8228885339770608769}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eb244da87475014689e6c701a9c8016, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: be.elab.texturetoolbox::Eloi.TextureUtility.TextureMono_ProcessRenderTextureManualWrapper
+--- !u!4 &6212635853388834921 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2595596186394735848, guid: 112698fc9e34c1c4f90638c792bc80ad, type: 3}
+  m_PrefabInstance: {fileID: 8228885339770608769}
+  m_PrefabAsset: {fileID: 0}
