@@ -2304,6 +2304,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Panel_RealityHacker NoFull Screen
       objectReference: {fileID: 0}
+    - target: {fileID: 4529682668411869548, guid: 92ee2f7e3279d8b4daa78543f954f6a7, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4529682668411869548, guid: 92ee2f7e3279d8b4daa78543f954f6a7, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4908503537248094557, guid: 92ee2f7e3279d8b4daa78543f954f6a7, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2438,6 +2446,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6812400522195853215, guid: 92ee2f7e3279d8b4daa78543f954f6a7, type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7554810602457165866, guid: 92ee2f7e3279d8b4daa78543f954f6a7, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7554810602457165866, guid: 92ee2f7e3279d8b4daa78543f954f6a7, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8210419407929005081, guid: 92ee2f7e3279d8b4daa78543f954f6a7, type: 3}
