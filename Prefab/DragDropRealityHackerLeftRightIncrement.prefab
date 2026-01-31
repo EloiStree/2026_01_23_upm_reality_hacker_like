@@ -2292,6 +2292,14 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2522348599935612051, guid: 92ee2f7e3279d8b4daa78543f954f6a7, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522348599935612051, guid: 92ee2f7e3279d8b4daa78543f954f6a7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: edc5a9e8cb5e2a34c8bef93e044eb4a4, type: 3}
     - target: {fileID: 2988209679151474863, guid: 92ee2f7e3279d8b4daa78543f954f6a7, type: 3}
       propertyPath: m_Name
       value: Panel_RealityHacker NoFull Screen
@@ -2320,6 +2328,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4980439404193396459, guid: 92ee2f7e3279d8b4daa78543f954f6a7, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4980439404193396459, guid: 92ee2f7e3279d8b4daa78543f954f6a7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: edc5a9e8cb5e2a34c8bef93e044eb4a4, type: 3}
     - target: {fileID: 5090555845377980284, guid: 92ee2f7e3279d8b4daa78543f954f6a7, type: 3}
       propertyPath: m_Enabled
       value: 0
